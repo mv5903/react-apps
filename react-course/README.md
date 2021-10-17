@@ -6,4 +6,4 @@ Each commit will represent each part of the video, and you'll be able to track m
 
 Eventually I plan on making my own website with React, will all code fully available soon.
 
-You can view my current website at (mattvandenberg.com)[https://www.mattvandenberg.com].
+You can view my current website at [mattvandenberg.com](https://www.mattvandenberg.com).
