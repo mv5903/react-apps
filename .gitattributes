@@ -2,3 +2,4 @@
 * text=auto
 react-course/public/** linguist-detectable
 react-course/src/** linguist-detectable
+*.js linguist-language=React Javascript
