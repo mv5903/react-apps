@@ -3,7 +3,9 @@ import { useRef } from 'react';
 import Card from "../ui/Card";
 import classes from "./NewMeetupForm.module.css";
 
-function NewMeetupForm() {
+function NewMeetupForm(props) {
+
+    // Use firebase for databases
     const titleInputRef = useRef();
     const imageInputRef = useRef();
     const addressInputRef = useRef();
@@ -11,17 +13,19 @@ function NewMeetupForm() {
 
     function submitHandler(event) {
         event.preventDefault();
-        const enteredtitle = titleInputRef.current.value;
+        const enteredTitle = titleInputRef.current.value;
         const enteredImage = imageInputRef.current.value;
         const enteredAddress = addressInputRef.current.value;
-        const eneteredDescription = descriptionInputRef.current.value;
+        const enteredDescription = descriptionInputRef.current.value;
 
         const meetupData = {
-            title: enteredtitle,
+            title: enteredTitle,
             image: enteredImage,
             address: enteredAddress,
-            description: eneteredDescription
+            description: enteredDescription
         };
+
+        props.onAddMeetup(meetupData);
 
         console.log(meetupData);
     }
