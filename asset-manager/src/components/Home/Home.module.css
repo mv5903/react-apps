@@ -1,0 +1,35 @@
+.home {
+    color: white;
+}
+
+.homeTitle {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.infoCards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+
+.infoCards div {
+    text-align: center;
+    width: 25vw;
+    border: 3px solid blue;
+    padding: 16px 10px;
+    min-height: 10vh;
+}
+
+.infoCards div h3 {
+    font-size: 24px;
+    margin-bottom: 2vh;
+}
+
+.waitingFor {
+    text-align: center;
+    margin-top: 20vh;
+}
